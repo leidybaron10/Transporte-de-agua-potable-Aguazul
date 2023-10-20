@@ -1,0 +1,376 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title> Aguazul </title>
+
+    <style>
+        body {
+            background-color: rgb(235, 237, 237);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h1 {
+            color: #003D4A;
+            margin: 0;
+        }
+
+        h2 {
+            color: #003D4A;
+            font-style: italic;
+        }
+
+        h3 {
+            color: #003D4A;
+        }
+
+        header {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            padding: 0;
+            margin: 0;
+            font-family: font-family: Verdana, Geneva, sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #005C6F;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: .5em 1em;
+        }
+
+        nav li a:hover {
+            background: #003D4A;
+            color: white;
+        }
+
+        .menu {
+            text-decoration: none;
+        }
+
+        section {}
+
+        .normal {
+            margin: 0 0 20px 0;
+        }
+
+        .normal h1 {
+            color: #003D4A;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+
+        .normal p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .normal article {
+            text-align: center;
+        }
+
+        .normal article p {
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        section img {
+            width: 100%;
+        }
+
+        .destacada {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 33%;
+        }
+
+        .destacada article {
+            padding: 30px;
+            min-width: 60%;
+            max-width: 60%;
+        }
+
+        .destacada table {
+            min-width: 30%;
+            max-width: 30%;
+            background: white;
+            color: gray;
+            padding: 10px
+        }
+
+        .servicios {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 33%;
+        }
+
+        .servicios article {
+            width: 50%;
+            background: #e5e5e5;
+            padding: 15px 10px;
+        }
+
+        .a {
+            display: flex;
+        }
+
+        .b {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .b a {
+            width: 45%;
+            padding: 0 10px;
+            background: #005C6F;
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .b a:hover {
+            background: #003D4A;
+        }
+
+        .b a div {
+            height: 100px;
+            overflow: hidden;
+            margin-top: 10px;
+
+        }
+
+        .uno {
+            background: #002B34;
+            margin-top: 30px;
+            color: white;
+            padding: 10px;
+            margin: 40px 0 0 0;
+        }
+
+
+        .uno h2 {
+            color: white;
+        }
+
+        .dos {
+            background: white;
+            color: gray;
+            padding: 10px;
+        }
+
+        .dos img {
+            width: 500px;
+            height: auto;
+            margin: 0 10px 0 0;
+        }
+
+        .tres {
+            background: #003D4A;
+            color: white;
+            padding: 30px;
+        }
+
+        .tres h2 {
+            color: white
+        }
+
+        .tres form {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            margin: 0 20px;
+        }
+
+        .tres form label {
+            color: white;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .tres form input {
+            color: white;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .tres form textarea {
+            color: white;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .boton {
+            background: black !important;
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+        }
+
+        .boton:hover {
+            background: #06242a;
+        }
+
+
+
+        #servicios-lista {
+            background-color: #005C6F;
+            color: white;
+            text-align: center;
+        }
+
+        .proyecto-inicio {
+            background-color: rgb(212, 239, 223);
+        }
+
+        .codigos {
+            background-color: blue;
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(255, 192, 203);
+        }
+
+        .potable {
+            background-color: #002B34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <h1 class="potable">Transporte de Agua Potable Aguazul</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre nosotros">Sobre nosotros</a></li>
+                <li><a href="#servicios prestados">Servicios Prestados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="inicio" class="normal">
+        <img src="https://aguazul.com.co/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-01-at-3.59.13-PM.jpeg">
+        <h1>Bienvenidos a Aguazul</h1>
+        <p>En este sitio encontrarás información sobre nuestra empresa y los servicios que ofrecemos.</p>
+
+        <article id="intro">
+            <h2>Como utilizar nuestra pagina web</h2>
+            <p>Nuestra página como ves en el inicio podemos escoger cualquier opción que requieras si nos quieres conocer como empresa o contactarnos para prestar el servicio de agua potable, estamos las 24h si lo necesitas nuestros operarios de comunicación te responderán en breves momentos.</p>
+        </article>
+    </section>
+
+
+    <section id="sobre nosotros" class="destacada uno">
+        <article>
+            <h2>¿Cuales son los servicios que prestamos y quienes somos?</h2>
+            <p>Somos una empresa de agua potable que recorremos todas las localidades de Bogotá y sus alrededores, contamos con 3 vehículos quienes se dirigen a tu ubicación para prestarte el servicio, tenemos todos los papeles en regla ya sea acueducto y secretaria de salud, el servicio que prestamos tiene en cuenta el precio de la ubicación donde se encuentra el requerimiento de este.</p>
+        </article>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Metros de Mangera </th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>14 m</td>
+                    <td id="servicios-lista">220.000</td>
+                </tr>
+                <tr>
+                    <td>24 m</td>
+                    <td id="servicios-lista">450.000</td>
+                </tr>
+                <tr>
+                    <td>42 m</td>
+                    <td id="servicios-lista">800.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contacto" class="destacada dos">
+        <img src="https://aguazul.com.co/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-01-at-3.59.13-PM-1.jpeg">
+        <article style="padding: 10px">
+            <h2><em>Nosotros</em></h2>
+            <p>Somos una empresa dedicada a ofrecer soluciones tecnológicas innovadoras y eficientes para pequeñas y medianas empresas.</p>
+            <p>Contamos con un equipo altamente capacitado y comprometido con la satisfacción de nuestros clientes.</p>
+        </article>
+
+    </section>
+
+
+    <section id="servicios prestados" class="servicios">
+        <article class="a">
+            <h2>Servicios Prestados</h2>
+            <ol>
+                <li>Restaurantes</li>
+                <li>Cierres de Agua en las localidades </li>
+                <li>Aeropuerto el Dorado</li>
+                <li>Movistar Arena </li>
+                <li>Obras </li>
+                <li>Casas</li>
+                <li>Conjuntos</li>
+                <li>Entre otros </li>
+            </ol>
+        </article>
+        <article class="b">
+            <a target="_blank" href="https://mambolatin.com/"> Mambo <div><img src="https://mambolatin.com/wp-content/uploads/2023/01/mambo1.jpg"></div></a>
+            <a target="_blank" href="https://empresite.eleconomistaamerica.co/CAMACHO-PARRA-INGENIEROS-CIVILES-SAS.html">Camacho Parra Ingenieros Civiles S A S <div><img src="https://bogota.gov.co/sites/default/files/2022-04/obras-bogota-impulsan-empleo.jpg"></div> </a>
+            <a target="_blank" href="https://textilestejicolor.com/">Textiles Tejicolor <div><img src="https://textilestejicolor.com/wp-content/uploads/2020/07/Logo-Textiles-Tejicolor.jpg"></div> </a>
+            <a target="_blank" href="https://conjuntoresidencialelcedro.com/">Conjunto el Cedro <div><img src="https://conjuntoresidencialelcedro.com/wp-content/uploads/2019/05/a_002-1.png"></div></a>
+        </article>
+    </section>
+
+    <section id="contacto" class="destacada tres">
+        <h2>Contacto</h2>
+        <form action="enviar_mensaje.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <input type="submit" class="boton" value="Enviar">
+        </form>
+        <a href="https://api.whatsapp.com/send?phone=573016034470&text=Hola%20somos%20Aguazul%20en%20que%20te%20podemos%20ayudar%F0%9F%9A%9A%F0%9F%92%A6"><img src=https://cdn-icons-png.flaticon.com/512/3670/3670051.png target="_blank" style="width: 70px"></a>
+    </section>
+    <footer>
+        <p> Algunos de los codigos son sacados de <a href="https://oregoom.com/">https://oregoom.com/</a></p>
+        <p><b>Leidy Viviana Baron Vega</b><br>30/09/2023</p>
+
+    </footer></html>
